@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 08:00:11 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 10:51:33 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,7 @@ static void	rest(t_str a, t_str b, t_str aa, t_str bb)
 	int		i;
 
 	i = strcmp(ft_strcat(a, b), strcat(aa, bb));
-	if (i == 0)
-		ft_putendl("Worked");
-	else
+	if (i != 0)
 	{
 		printf("Expected ::num=%d::str1=%s::str2=%s\n", 0, a, aa);
 		printf("Got      ::num=%d::str1=%s::str2=%s\n", i, a, aa);

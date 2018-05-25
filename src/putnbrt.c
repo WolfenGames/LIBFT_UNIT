@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   l.h                                                :+:      :+:    :+:   */
+/*   putnbrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:20:05 by jwolf            ###   ########.fr       */
+/*   Created: 2018/05/25 11:03:56 by jwolf             #+#    #+#             */
+/*   Updated: 2018/05/25 11:09:12 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef L_H
-# define L_H
+#include "../includes/l.h"
 
-# include "../libft/libft.h"
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <string.h>
+void	putnbrt(void)
+{
+	size_t	a = -99999999999;
+	size_t	b = 999999999999;
+	size_t	c = 12355;
 
-void	atoitest(void);
-void	putstrtest(void);
-void	strcattest(void);
-void	fd_test(void);
-void	itoatest(void);
-void	teststrcpy(void);
-void	is_tests(void);
-void	putnbrt(void);
-void	touptolow(void);
-
-#endif
+	ft_putnbr(a);
+	ft_putchar('\n');
+	ft_putnbr_fd(b, 1);
+	ft_putchar('\n');
+	ft_putnbr(c);
+	ft_putchar('\n');
+}

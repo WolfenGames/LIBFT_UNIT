@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 07:02:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 07:43:41 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 10:51:16 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,7 @@
 
 static void	rest(char *a)
 {
-	if (ft_atoi(a) == atoi(a))
-		ft_putendl("Worked");
-	else
+	if (ft_atoi(a) != atoi(a))
 	{
 		ft_putendl("Da Fuk??");
 		printf("expected :: %d\n", atoi(a));

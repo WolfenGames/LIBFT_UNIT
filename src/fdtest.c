@@ -1,32 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   l.h                                                :+:      :+:    :+:   */
+/*   fdtest.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:20:05 by jwolf            ###   ########.fr       */
+/*   Created: 2018/05/25 08:03:02 by jwolf             #+#    #+#             */
+/*   Updated: 2018/05/25 08:11:43 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef L_H
-# define L_H
+#include "../includes/l.h"
 
-# include "../libft/libft.h"
-# include <stdio.h>
-# include <stdlib.h>
-# include <unistd.h>
-# include <string.h>
+void	fd_test(void)
+{
+	char	a[256] = "Hello World\n";
+	char	b[256] = "Good Bye World\n\0 I am Hidden";
+	char	c[256] = "Hello again W\0rld";
 
-void	atoitest(void);
-void	putstrtest(void);
-void	strcattest(void);
-void	fd_test(void);
-void	itoatest(void);
-void	teststrcpy(void);
-void	is_tests(void);
-void	putnbrt(void);
-void	touptolow(void);
-
-#endif
+	ft_putchar_fd('\0', 1);
+	ft_putchar_fd('\n', 1);
+	ft_putstr_fd(a, 1);
+	ft_putstr_fd(b, 1);
+	ft_putendl_fd(c, 1);
+}
