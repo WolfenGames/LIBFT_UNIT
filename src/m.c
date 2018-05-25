@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:31:04 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 13:02:30 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,13 @@ int		main(void)
 	teststrcpy();
 	ft_putendl("Testing the is? stuff");
 	is_tests();
-	ft_putendl("Testing ft_putnbr + ft_putnbr_fd\n");
+	ft_putendl("Testing ft_putnbr + ft_putnbr_fd");
 	putnbrt();
-	ft_putendl("Testing toUp && toLow\n");
+	ft_putendl("Testing toUp && toLow");
 	touptolow();
-	ft_putendl("Testing Mem... What was I doing again???\n");
+	ft_putendl("Testing Mem... What was I doing again???");
 	mem();
+	ft_putendl("O yes, testing strings..");
+	strtest();
 	return (0);
 }

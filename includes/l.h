@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:50:54 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 13:01:55 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ void	is_tests(void);
 void	putnbrt(void);
 void	touptolow(void);
 void	mem(void);
+void	strtest(void);
 
 #endif

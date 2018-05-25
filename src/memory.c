@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 11:26:28 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:57:04 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 13:13:41 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,13 @@ void	mem(void)
 	char	a[40] = "Hello World\n\0JJenkins didnt die";
 	char	*str2 = (char *)malloc(sizeof(char *) * 2048);
 	char	str3[100]; 
+	void	**ptr;
 
+	if (!(ptr = ft_memalloc(sizeof(char *) * 1024)))
+	{
+		printf(EX);
+		return ;
+	}
 	if (!(str = ft_memalloc(sizeof(str) * 1024)))
 	{
 		printf("No Memory!!!\n");
@@ -52,7 +58,11 @@ void	mem(void)
 		printf("Memchr\n");
 		if (memchr(str2, 'W', 1024) != ft_memchr(str2, 'W', 1024))
 			printf(EX);
+		printf("vvvvvvvv\n");
+		printf("%s^^^^^^^^ MEMCHAR!!1\n", ft_memchr(str, 'W', 1024));
 		ft_memmove(str3, a, ft_strlen(a));
-		printf("%s::%s\n", str3, a);
+		printf("(--)%s\n", str3);
+		ft_strclr(a);
+		printf("RADNDOM FT_STRCLR :::(%zu):::(%s)<_ 0 and empty\n", ft_strlen(a), a);
 	}
 }
