@@ -6,12 +6,13 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:20:05 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 11:50:54 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef L_H
 # define L_H
+# define EX "HMM FUCKED UP YOU DID\n"
 
 # include "../libft/libft.h"
 # include <stdio.h>
@@ -28,5 +29,6 @@ void	teststrcpy(void);
 void	is_tests(void);
 void	putnbrt(void);
 void	touptolow(void);
+void	mem(void);
 
 #endif

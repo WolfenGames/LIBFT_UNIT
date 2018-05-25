@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 11:17:48 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 11:31:04 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,7 @@ int		main(void)
 	putnbrt();
 	ft_putendl("Testing toUp && toLow\n");
 	touptolow();
+	ft_putendl("Testing Mem... What was I doing again???\n");
+	mem();
 	return (0);
 }
