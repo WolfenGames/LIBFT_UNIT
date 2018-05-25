@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 07:10:38 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/25 08:00:11 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,24 @@ void	putstrtest(void)
 	char	c[] = "\0";
 
 	ft_putstr(a);
+	ft_putchar('\n');
+	ft_putchar('\0');
 	ft_putendl(c);
 	ft_putendl(b);
+}
+
+static void	rest(t_str a, t_str b, t_str aa, t_str bb)
+{
+	int		i;
+
+	i = strcmp(ft_strcat(a, b), strcat(aa, bb));
+	if (i == 0)
+		ft_putendl("Worked");
+	else
+	{
+		printf("Expected ::num=%d::str1=%s::str2=%s\n", 0, a, aa);
+		printf("Got      ::num=%d::str1=%s::str2=%s\n", i, a, aa);
+	}
 }
 
 void	strcattest(void)
@@ -33,21 +49,7 @@ void	strcattest(void)
 	char	cc[256] = "\0Hidden Words";
 	char	bc[256]	= "Broken String Test";
 
-	 if (strcmp(ft_strcat(a, b), strcat(aa, bb)) == 0)
-		ft_putendl("Worked");
-	else
-		ft_putendl("Da Fuk???");	
-	if (strcmp(ft_strcat(a, c), strcat(aa, cc)) == 0)
-		ft_putendl("Worked");
-	else
-		ft_putendl("Da Fuk???");
-	if (strcmp(ft_strcat(b, c), strcat(bb, cc))== 0)
-		ft_putendl("Worked");
-	else
-		ft_putendl("Da Fuk???");
-	if (strcmp(b, strcat(bb, bc)) == 0)
-		ft_putendl("Worked");
-	else
-		ft_putendl("Da Fuk???\n\nJust Kidding it works");
-
+	rest(a, b, aa, bb);
+	rest(b, c, bb, cc);
+	rest(a, c, aa, cc);
 }
