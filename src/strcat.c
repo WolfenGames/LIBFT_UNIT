@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 10:51:33 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/28 09:55:27 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	putstrtest(void)
 	ft_putendl(b);
 }
 
-static void	rest(t_str a, t_str b, t_str aa, t_str bb)
+static void	rest(char *a, char *b, char *aa, char *bb)
 {
 	int		i;
 
