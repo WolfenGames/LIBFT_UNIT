@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 11:26:28 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 13:13:41 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/28 15:46:03 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,15 @@ size_t	mystrlen(char *s)
 	while (s[i] != '\0')
 		i++;
 	return (i);
+}
+
+void	test_jasen_theory(void)
+{
+	char	dest[] = "Jasen";
+	char	src[] = "Shane";
+
+	ft_memmove(dest, src, 8);
+	ft_putendl(dest);
 }
 
 void	mem(void)
