@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/24 18:05:09 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/29 09:11:46 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/29 11:07:22 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,7 @@ int		main(void)
 	strtest();
 	ft_putendl("Tested Jasen theory");
 	test_jasen_theory();
+	ft_putendl("Testing List.... Fuck...");
+	lst_test();
 	return (0);
 }
