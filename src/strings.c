@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 13:01:03 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/25 13:55:41 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/29 10:53:37 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 void	strtest(void)
 {
-	char	a[100] = "Hello";
+	char	a[100] = "Hello\0 I am Naruto!!1";
 	char	c[100] = " ";
 	char	b[100] = "World";
 	char	d[1024] = "";
+	char	*join = ft_memalloc(sizeof(char*) * 1024);
 	char	*split = "**libft.h***main.c*file99.c****file1.c****file44.c**";
 	char	**list;
 	int		i;
@@ -40,7 +41,9 @@ void	strtest(void)
 		ft_putendl(list[i++]);
 	ft_strcpy(d, ft_strdup(list[1]));
 	ft_putendl(d);
-	ft_strjoin(d, " ");
+	ft_pm(d, 32);
+	join = ft_strjoin(d, " ");
+	ft_pm(join, 32);
 	ft_strcat(d, a);
 	ft_putendl(d);
 }

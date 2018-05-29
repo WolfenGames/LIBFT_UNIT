@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/28 13:14:07 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/29 10:54:01 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,5 +32,7 @@ void	touptolow(void);
 void	mem(void);
 void	test_jasen_theory(void);
 void	strtest(void);
+
+void	*ft_pm(const void *add, size_t size);
 
 #endif
