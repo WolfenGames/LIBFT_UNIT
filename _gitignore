@@ -1,0 +1,5 @@
+.gitignore
+libft/
+libft.a
+srs/*.swp
+*.swp
