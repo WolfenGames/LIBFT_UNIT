@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 11:26:28 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/29 10:56:40 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/30 08:43:55 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,23 @@ void	test_jasen_theory(void)
 
 	ft_memmove(dest, src, 3);
 	ft_putendl(dest);
+}
+
+void	test_corry_theory(void)
+{
+	char	dest[32] = "Hello World!";
+	char	src[32] = "GoodBye World!";
+	char	dest2[32] = "GoodBye World!";
+	char	src2[32] = "Hello World!";
+
+	printf(" src > dest \n");
+	ft_pm(dest, 32);
+	ft_memmove(dest, src, 12);
+	ft_pm(dest, 32);
+	printf(" dest > src \n ");
+	ft_pm(dest2, 32);
+	ft_memmove(dest2, src2, 12);
+	ft_pm(dest2, 32);
 }
 
 void	printm(char *str, char *msg, size_t size)
@@ -88,5 +105,7 @@ void	mem(void)
 		ft_strclr(a);
 		printf("RADNDOM FT_STRCLR :::(%zu):::(%s)<_ 0 and empty\n",
 				ft_strlen(a), a);
+		printf("Test c theory\n");
+		test_corry_theory();
 	}
 }
