@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 11:26:28 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/30 08:43:55 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/05/30 09:25:52 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,23 +29,6 @@ void	test_jasen_theory(void)
 
 	ft_memmove(dest, src, 3);
 	ft_putendl(dest);
-}
-
-void	test_corry_theory(void)
-{
-	char	dest[32] = "Hello World!";
-	char	src[32] = "GoodBye World!";
-	char	dest2[32] = "GoodBye World!";
-	char	src2[32] = "Hello World!";
-
-	printf(" src > dest \n");
-	ft_pm(dest, 32);
-	ft_memmove(dest, src, 12);
-	ft_pm(dest, 32);
-	printf(" dest > src \n ");
-	ft_pm(dest2, 32);
-	ft_memmove(dest2, src2, 12);
-	ft_pm(dest2, 32);
 }
 
 void	printm(char *str, char *msg, size_t size)
@@ -97,15 +80,14 @@ void	mem(void)
 			printf(EX);
 		printf("vvvvvvvv\n");
 		printf("%s\n^^^^^^^^ MEMCHAR!!1\n", ft_memchr(str, 'W', 1024));
-		printf("(++BeforeMove )%s\n", str3);
-		printm(str, "Memmove values", 32);
+		printf("(++BeforeMove ) - str::%s\n", str3);
+		printm(str3, "Memmove values", 32);
 		ft_memmove(str3, a, ft_strlen(a));
-		printf("(--AfterMove  )%s\n", str3);
+		printf("(--AfterMove  ) - str::%s\n", str3);
 		ft_pm(str3, 32);
 		ft_strclr(a);
 		printf("RADNDOM FT_STRCLR :::(%zu):::(%s)<_ 0 and empty\n",
 				ft_strlen(a), a);
 		printf("Test c theory\n");
-		test_corry_theory();
 	}
 }
