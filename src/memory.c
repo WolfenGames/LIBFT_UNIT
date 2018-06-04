@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 11:26:28 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/30 09:25:52 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/06/04 07:06:49 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void	printm(char *str, char *msg, size_t size)
 void	mem(void)
 {
 	char	*str;
-	char	a[40] = "Hello World\n\0JJenkins didnt die";
+	char	a[40] = "Hello World\n\0Jenkins didnt die";
 	char	*str2 = (char *)malloc(sizeof(char *) * 2048);
 	char	str3[100]; 
 	void	**ptr;
@@ -85,6 +85,7 @@ void	mem(void)
 		ft_memmove(str3, a, ft_strlen(a));
 		printf("(--AfterMove  ) - str::%s\n", str3);
 		ft_pm(str3, 32);
+		ft_pm(a, 32);
 		ft_strclr(a);
 		printf("RADNDOM FT_STRCLR :::(%zu):::(%s)<_ 0 and empty\n",
 				ft_strlen(a), a);
