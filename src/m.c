@@ -39,7 +39,8 @@ int		main(void)
 	strtest();
 	ft_putendl("Tested Jasen theory");
 	test_jasen_theory();
-//	ft_putendl("Testing List.... Fuck...");
+	ft_putendl("Testing List.... Fuck...");
+	lst_test();
 	ft_putendl("Rodgers Tests");
 	strlen_tests();
 	return (0);

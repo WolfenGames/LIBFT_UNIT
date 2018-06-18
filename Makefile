@@ -17,5 +17,5 @@ fclean:
 
 re:	fclean all
 
-run: all
+run: re
 	./$(NAME)
