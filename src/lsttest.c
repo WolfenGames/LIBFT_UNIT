@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/29 11:03:36 by jwolf             #+#    #+#             */
-/*   Updated: 2018/05/29 11:54:02 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/06/13 14:36:37 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void		lst_test(void)
 	t_list	**tree;
 	char	*str;
 	int		i;
+
+
 
 	i = 0;
 	str = ft_strnew(32);
@@ -37,4 +39,5 @@ void		lst_test(void)
 			return ;
 		i++;
 	}
+
 }
