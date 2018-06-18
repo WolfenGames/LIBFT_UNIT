@@ -6,7 +6,7 @@
 /*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/29 11:03:36 by jwolf             #+#    #+#             */
-/*   Updated: 2018/06/13 14:36:37 by jwolf            ###   ########.fr       */
+/*   Updated: 2018/06/18 13:30:19 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ void		lst_test(void)
 	{
 		while (i < 41)
 		{
-			if (lst2->content)
+			if ((ft_memcmp(lst2->content,"Hello World", ft_strlen((const char *)lst2->content)) == 0))
 				printf("%s--%zu\n", lst2->content, lst2->content_size);
 			if (lst2)
 				lst2 = lst2->next;

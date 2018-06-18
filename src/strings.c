@@ -32,6 +32,7 @@ void	strtest(void)
 	int		i;
 
 	i = 0;
+	ft_putendl_i("Testing strcmp ", ft_strcmp("",""));
 	list = (char **)malloc(sizeof(char **) * 100 * 100);
 	ee = (char *)ft_memalloc(sizeof(char) * 100);
 	ft_strcat(a, c);
