@@ -34,6 +34,11 @@ void	test_jasen_theory(void);
 void	strtest(void);
 void	strlen_tests(void);
 void	lst_test(void);
+void    it_test(char *c);
+void    iti_test(unsigned int i, char *c);
+
+char    change(char s);
+char    change_i(unsigned int i, char c);
 
 void	*ft_pm(const void *add, size_t size);
 

@@ -33,7 +33,8 @@ t_list		*test_map(t_list *elem)
 	i = 0;
 	while (i < ft_strlen(content))
 	{
-		content[i] += 1;
+		if (content[i])
+			content[i] += 1;
 		i++;
 	}
 	new = ft_lstnew((void const *)content, 5);
@@ -46,6 +47,7 @@ void		lst_test(void)
 	t_list	*lst;
 	t_list	*lst2;
 	t_list	**tree;
+	t_list	**lstiter;
 	char	*str;
 	int		i;
 	void	*del;
@@ -131,4 +133,9 @@ void		lst_test(void)
 		ft_putendl(EX);
 	free(begin->next);
 	free(begin);
+	lst2 = lst;
+	if (!lst2)
+		ft_putendl("List exists(BAD)");
+	else
+		ft_putendl("List doesnt exist (GOOD)");
 }
