@@ -44,7 +44,8 @@ void	strtest(void)
 	list = ft_strsplit(split, '*');
 	while (list[i])
 		ft_putendl(list[i++]);
-	ft_putendl_i("Result of strnstr = ", ft_strcmp(ft_strnstr(split2, "ing\0b", 14), strnstr(split2, "ing\0b", 14)));
+	ft_putendl_i("Result of strnstr = ", ft_strcmp(ft_strnstr(split2, "ing\0b", 14),
+					strnstr(split2, "ing\0b", 14)));
 	split2 = ft_strnstr(split2, "ing\0b", 14);
 	ft_putendl_c("StrStr == ", split2);
 	ft_strcpy(d, ft_strdup(list[1]));

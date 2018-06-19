@@ -25,13 +25,14 @@ static void	rest(char *a)
 void	atoitest(void)
 {
 	char	a[128] = "000000000000000100";
-	char	h[128] = "000000000 0000-10-";
 	char	b[128] = "00000000000000-10-";
-	char	e[128] = "123456789012345678";
-	char	g[128] = "-123456789012345675";
-	char	f[128] = "12345678901234567890";
 	char	c[128] = "-123A There is a Nyan Cat in my pants";
 	char	d[128] = "0129\0012334\0Hidden\n123";
+	char	f[128] = "12345678901234567890";
+	char	e[128] = "123456789012345678";
+	char	g[128] = "-123456789012345675";
+	char	h[128] = "000000000 0000-10-";
+	char	i[128] = "        +00000000000031";
 
 	rest(a);
 	rest(g);
@@ -40,4 +41,5 @@ void	atoitest(void)
 	rest(c);
 	rest(d);
 	rest(h);
+	rest(i);
 }
