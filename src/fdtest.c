@@ -22,5 +22,5 @@ void	fd_test(void)
 	ft_putchar_fd('\n', 1);
 	ft_putstr_fd(a, 1);
 	ft_putstr_fd(b, 1);
-	ft_putendl_fd(c, 1);
+	printf("%s, %d\n", c, 1);
 }

@@ -27,7 +27,7 @@ void	strtest(void)
 	int		i;
 
 	i = 0;
-	ft_putendl_i("Testing strcmp ", ft_strcmp(" "," H"));
+	printf("Testing strcmp %d", ft_strcmp(" "," H"));
 	list = (char **)malloc(sizeof(char **) * 100 * 100);
 	ee = (char *)ft_memalloc(sizeof(char) * 100);
 	ft_strcat(a, c);
@@ -44,10 +44,10 @@ void	strtest(void)
 	list = ft_strsplit(split, '*');
 	while (list[i])
 		ft_putendl(list[i++]);
-	ft_putendl_i("Result of strnstr = ", ft_strcmp(ft_strnstr(split2, "ing\0b", 14),
+	printf("Result of strnstr = %d\n", ft_strcmp(ft_strnstr(split2, "ing\0b", 14),
 					strnstr(split2, "ing\0b", 14)));
 	split2 = ft_strnstr(split2, "ing\0b", 14);
-	ft_putendl_c("StrStr == ", split2);
+	printf("StrStr == %s\n", split2);
 	ft_strcpy(d, ft_strdup(list[1]));
 	ft_putendl(d);
 	ft_pm(d, 32);
@@ -56,12 +56,12 @@ void	strtest(void)
 	ft_strcat(d, a);
 	ft_putendl(d);
 	ee = ft_strmap(e, change);
-	ft_putendl_c("Original Value before map_test --> ", e);
-	ft_putendl_c("strmap - Should be 'Tus!Nbq!J' --> ", ee);
+	printf("Original Value before map_test --> %s\n", e);
+	printf("strmap - Should be 'Tus!Nbq!J' --> %s\n", ee);
 	ee = ft_strmapi(e, change_i);
-	ft_putendl_c("strmapi - Should be 'SspI\\jA' --> ", ee);
+	printf("strmapi - Should be 'SspI\\jA' --> %s\n", ee);
 	ft_striter(e, it_test);
-	ft_putendl_c("striter - Should be 'Tus!Nbq!J' --> ", e);
+	printf("striter - Should be 'Tus!Nbq!J' --> %s\n", e);
 	ft_striteri(ee, iti_test);
-	ft_putendl_c("striteri - Should be 'Str Map I' --> ", ee);
+	printf("striteri - Should be 'Str Map I' --> %s\n", ee);
 }

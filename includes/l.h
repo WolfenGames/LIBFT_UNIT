@@ -14,7 +14,7 @@
 # define L_H
 # define EX "HMM FUCKED UP YOU DID\n"
 
-# include "../libft/libft.h"
+# include "../Libft/libft.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
