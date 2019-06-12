@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   l.h                                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jwolf <jwolf@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 07:08:18 by jwolf             #+#    #+#             */
-/*   Updated: 2018/06/13 12:23:40 by jwolf            ###   ########.fr       */
+/*   Updated: 2019/06/12 08:37:19 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define L_H
 # define EX "HMM FUCKED UP YOU DID\n"
 
-# include "../Libft/libft.h"
+# include "../libft/includes/libft.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
