@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   strings.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jwolf <jwolf@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/25 13:01:03 by jwolf             #+#    #+#             */
-/*   Updated: 2018/06/13 12:38:23 by jwolf            ###   ########.fr       */
+/*   Updated: 2019/06/12 08:50:05 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	strtest(void)
 	int		i;
 
 	i = 0;
+	ft_putstr(NULL);
 	printf("Testing strcmp %d", ft_strcmp(" "," H"));
 	list = (char **)malloc(sizeof(char **) * 100 * 100);
 	ee = (char *)ft_memalloc(sizeof(char) * 100);
