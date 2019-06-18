@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   lsttest.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jwolf <marvin@42.fr>                       +#+  +:+       +#+        */
+/*   By: jwolf <jwolf@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/05/29 11:03:36 by jwolf             #+#    #+#             */
-/*   Updated: 2018/06/18 13:30:19 by jwolf            ###   ########.fr       */
+/*   Updated: 2019/06/18 14:40:15 by jwolf            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,6 +96,7 @@ void		lst_test(void)
 	{
 		while (i < 41)
 		{
+			printf("%d::", i+1);
 			if ((ft_memcmp(lst2->content,"Hello World", ft_strlen((const char *)lst2->content)) == 0))
 				printf("%s--%zu\n", lst2->content, lst2->content_size);
 			if (lst2)

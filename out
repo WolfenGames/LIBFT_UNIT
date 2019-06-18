@@ -1,0 +1,197 @@
+putendl / putstr / putchar test$
+Hello World$
+$
+$
+Bye Bye W$
+strcat test$
+atoi test$
+Testing fd -> same tests as putendl / putstr/ putchar$
+^@$
+Hello World$
+Good Bye World$
+Testing itoa$
+Testing strcpy && strncpy$
+Testing the is? stuff$
+Testing ft_putnbr + ft_putnbr_fd$
+-1215752191$
+-727379969$
+12355$
+Testing toUp && toLow$
+Testing Mem... What was I doing again???$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+$
+4865 6c6c 6f20 576f 726c 640a 0000 0000 Hello World.....$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+4865 6c6c 6f20 576f 726c 640a 0000 0000 Hello World.....$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+$
+4865 6c6c 6f20 576f 726c 640a 0000 0000 Hello World.....$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+$
+4865 6c6c 6f20 576f 726c 640a 004a 656e Hello World..Jen$
+6b69 6e73 2064 6964 6e74 2064 6965 0000 kins didnt die..$
+$
+O yes, testing strings..$
+libft.h$
+main.c$
+file99.c$
+file1.c$
+file44.c$
+main.c$
+6d61 696e 2e63 0000 0000 0000 0000 0000 main.c..........$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+6d61 696e 2e63 2000 0000 0000 0000 0000 main.c .........$
+0000 0000 0000 0000 0000 0000 0000 0000 ................$
+main.cHello World $
+Tested Jasen theory$
+Shaen$
+Testing List.... Fuck...$
+lst_del works$
+Deleting$
+Hello World$
+32$
+List doesnt exist (GOOD)$
+Rodgers Tests$
+IF YOU SEE NOTHING ELSE BUT TEXT DONT PANIC!!!!11!!1!$
+$
+$
+$
+Hello again W, 1$
+Goes through the Whole Ascii$
+IsDigit$
+IsAlNum$
+isAscii - Max of 256$
+isAlpha - Max 128$
+isPrint - max 128$
+TOUPPER$
+TOLOWER$
+(00) memcpy - 1$
+(11) memcpy - 1 - end.$
+(00) memcpy - 1 end$
+(11) memcpy - 1 end - end.$
+Hello World$
+$
+re:Hello World$
+(00) memcpy - start$
+(11) memcpy - start - end.$
+(00) memcpy - end$
+(11) memcpy - end - end.$
+Memchr$
+vvvvvvvv$
+World$
+$
+^^^^^^^^ MEMCHAR!!1$
+(++BeforeMove ) - str::$
+(00) Memmove values$
+(11) Memmove values - end.$
+(--AfterMove  ) - str::Hello World$
+$
+RADNDOM FT_STRCLR :::(0):::()<_ 0 and empty$
+Test c theory$
+Testing strcmp -72Hello $
+Hello World$
+Result of strnstr = 0$
+StrStr == ing$
+Original Value before map_test --> Str Map I$
+strmap - Should be 'Tus!Nbq!J' --> Tus!Nbq!J$
+strmapi - Should be 'SspI\jA' --> Ssp^]I\j^YA$
+striter - Should be 'Tus!Nbq!J' --> Tus!Nbq!J$
+striteri - Should be 'Str Map I' --> Str Map I$
+Hello World--41$
+Hello World--40$
+Hello World--39$
+Hello World--38$
+Hello World--37$
+Hello World--36$
+Hello World--35$
+Hello World--34$
+Hello World--33$
+Hello World--32$
+Hello World--31$
+Hello World--30$
+Hello World--29$
+Hello World--28$
+Hello World--27$
+Hello World--26$
+Hello World--25$
+Hello World--24$
+Hello World--23$
+Hello World--22$
+Hello World--21$
+Hello World--20$
+Hello World--19$
+Hello World--18$
+Hello World--17$
+Hello World--16$
+Hello World--15$
+Hello World--14$
+Hello World--13$
+Hello World--12$
+Hello World--11$
+Hello Worl--10$
+Hello Wor--9$
+Hello Wo--8$
+Hello W--7$
+Hello --6$
+Hello--5$
+Hell--4$
+Hel--3$
+He--2$
+H--1$
+1::Hello World--41$
+2::Hello World--40$
+3::Hello World--39$
+4::Hello World--38$
+5::Hello World--37$
+6::Hello World--36$
+7::Hello World--35$
+8::Hello World--34$
+9::Hello World--33$
+10::--32$
+11::Hello World--31$
+12::Hello World--30$
+13::Hello World--29$
+14::Hello World--28$
+15::Hello World--27$
+16::Hello World--26$
+17::Hello World--25$
+18::Hello World--24$
+19::Hello World--23$
+20::Hello World--22$
+21::Hello World--21$
+22::Hello World--20$
+23::Hello World--19$
+24::Hello World--18$
+25::Hello World--17$
+26::Hello World--16$
+27::Hello World--15$
+28::Hello World--14$
+29::Hello World--13$
+30::Hello World--12$
+31::Hello World--11$
+32::Hello Worl--10$
+33::Hello Wor--9$
+34::Hello Wo--8$
+35::Hello W--7$
+36::Hello --6$
+37::Hello--5$
+38::Hell--4$
+39::Hel--3$
+40::He--2$
+41::H--1$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Ifmmp!Xpsme--5$
+Jgnnq--5$

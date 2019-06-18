@@ -28,4 +28,5 @@ fclean:
 re:	fclean all
 
 run: re
-	./$(basicName)
+	./$(NAME) | cat -e > diff_out
+	diff out diff_out

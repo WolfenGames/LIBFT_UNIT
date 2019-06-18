@@ -2,3 +2,5 @@
 libft
 .vscode
 *_main
+.DS_Store
+diff_out
